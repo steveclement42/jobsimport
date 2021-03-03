@@ -27,6 +27,11 @@ Un nouveau partenaire - le site JobTeaser.com - nous propose également de redif
 
 A réaliser en 1h30 :
 ---
-- Mettez à jour le code (et le modèle de données si besoin) pour importer le nouveau flux jobteaser.xml.
+Mettez à jour le code (et le modèle de données si besoin) pour importer le nouveau flux `jobteaser.xml`.
 (Le code de départ est très imparfait et conçu pour un seul partenaire. Faites le marcher pour le second partenaire, puis refactorez-le autant que vous voulez...)
-- Si vous aviez plus de temps, quelles seraient les évolutions que vous proposeriez pour améliorer ce code (découpage, optimisations, sécurisation...) ?
+
+Si vous aviez plus de temps :
+---
+Quelles seraient les évolutions que vous proposeriez pour améliorer ce code (découpage, optimisations, sécurisation...) ?
+
+:warning: Le but de ce test est de vérifier votre capacité à organiser le code (pas seulement à le faire marcher).
