@@ -13,7 +13,7 @@ Contexte:
 ChooseMyCompany est un site d'information sur les employeurs.
 Grace aux enquêtes salariés que nous administrons, nous récoltons des notes par entreprises que nous pouvons mettre à la disposition des visiteurs.
 Les visiteurs de notre site étant souvent en recherche d'emploi, nous avons souhaité leur proposer des offres directement sur le site choosemycompany.com.
-Pour cela, notre partenaire - le site d'emploi Regionsjob.com - nous transmet ses offres d'emploi via un flux XML.
+Pour cela, notre partenaire - le site d'emploi Regionsjob.com - nous transmet ses offres d'emploi via un flux XML (simulé ici par un fichier statique).
  
 Le code de ce petit projet permet l'import de ces offres dans notre système depuis ligne de commande.
 - `./init.sh` pour initialiser et lancer le projet
@@ -27,8 +27,8 @@ Un nouveau partenaire - le site JobTeaser.com - nous propose également de redif
 
 A réaliser en 1h30 :
 ---
-Mettez à jour le code (et le modèle de données si besoin) pour importer le nouveau flux `jobteaser.xml`.
-(Le code de départ est très imparfait et conçu pour un seul partenaire. Faites le marcher pour le second partenaire, puis refactorez-le autant que vous voulez...)
+Mettez à jour le code (et le modèle de données si besoin) pour importer le nouveau flux `jobteaser.json`.
+(Le code de départ est très imparfait et conçu pour un seul partenaire. Faites le marcher pour le second partenaire, puis refactorez-le si besoin pour le rendre maintenable / évolutif...)
 
 Si vous aviez plus de temps :
 ---
