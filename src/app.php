@@ -14,6 +14,7 @@ define('RESSOURCES_DIR', __DIR__ . '/../resources/');
 
 function __autoload(string $classname) {
     include_once(__DIR__ . '/' . $classname . '.php');
+    include_once(__DIR__ . '/' . $classname . '.json');
 }
 
 

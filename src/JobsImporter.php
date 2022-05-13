@@ -39,6 +39,22 @@ class JobsImporter
             );
             $count++;
         }
+        /* parse json file */
+        $xml = simplejson_load_file($this->file);
+
+        /* import each item */
+        $count = 0;
+        foreach ($json->item as $item) {
+            $this->db->exec('INSERT INTO job (link, title, description, reference, publishedDate, companyname) VALUES ('
+                . '\'' . addslashes($item->link) . '\', '
+                . '\'' . addslashes($item->title) . '\', '
+                . '\'' . addslashes($item->description) . '\', '
+                . '\'' . addslashes($item->reference) . '\', '
+                . '\'' . addslashes($item->publishedDate) . '\', '
+                . '\'' . addslashes($item->companyname) . '\')'
+            );
+            $count++;
+        }
         return $count;
     }
 }
